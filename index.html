@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>CERAMICS</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#f9f7f1;
+    font-family:Arial, sans-serif;
+    text-align:center;
+}
+
+/* NAVIGATION */
+nav{
+    padding:20px;
+    background-color:#f9f7f1;
+    border-bottom:2px solid #d4af37;
+}
+
+/* BUTTON LINKS */
+nav a{
+    text-decoration:none;
+}
+
+nav button{
+    background-color:white;
+    color:#c9a227;
+    border:2px solid #d4af37;
+    padding:12px 28px;
+    margin:8px;
+    font-size:15px;
+    border-radius:40px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+nav button:hover{
+    background-color:#d4af37;
+    color:white;
+    transform:scale(1.05);
+}
+
+/* VISITOR COUNTER */
+.counter{
+    margin-top:15px;
+}
+
+.counter button{
+    background-color:#d4af37;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* TITLE */
+h1{
+    color:#c9a227;
+    font-size:65px;
+    letter-spacing:6px;
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+/* IMAGE */
+.main-image img{
+    width:75%;
+    max-width:900px;
+    border-radius:18px;
+    box-shadow:0px 6px 18px rgba(0,0,0,0.25);
+    margin-top:20px;
+}
+
+/* TEXT */
+.welcome{
+    margin-top:20px;
+    color:#8b7500;
+    font-size:20px;
+    line-height:1.6;
+    padding:0 20px;
+}
+
+/* FOOTER */
+footer{
+    margin-top:60px;
+    padding:25px;
+    border-top:2px solid #d4af37;
+    color:#b8860b;
+    font-size:16px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION (CONNECTS ALL PAGES) -->
+<nav>
+
+    <a href="file:///C:/Users/DELL/FP%20WEB%20DEVELOPMENT-%20CERAMICS%20SITE/Home%20Page.html"><button>Home</button></a>
+
+    <a href="file:///C:/Users/DELL/FP%20WEB%20DEVELOPMENT-%20CERAMICS%20SITE/Artists.html"><button>Artist</button></a>
+
+    <a href="file:///C:/Users/DELL/FP%20WEB%20DEVELOPMENT-%20CERAMICS%20SITE/Gallery.html"><button>Gallery</button></a>
+
+    <a href="file:///C:/Users/DELL/Desktop/Final%20Project%20Website%20-CERAMICS%20-%20Dua%20Faisal%20012/About%20Us,%20Contact%20Us%20Page.html.html"><button>About Us</button></a>
+
+</nav>
+
+<!-- VISITOR COUNTER -->
+<div class="counter">
+
+    <button onClick="increaseCounter()">
+        Visitors: <span id="visitorCount">1024</span>
+    </button>
+
+</div>
+
+<!-- TITLE -->
+<h1>CERAMICS</h1>
+
+<!-- IMAGE -->
+<div class="main-image">
+
+    <img src="C:\Users\DELL\Downloads\ceramics-header.webp" alt="Ceramic Art">
+
+</div>
+
+<!-- WELCOME TEXT -->
+<div class="welcome">
+
+    <p>
+        Discover the timeless beauty of ceramics through handmade craftsmanship, 
+        artistic expression, and modern ceramic design.
+    </p>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+© 2026 CERAMICS - All Rights Reserved
+</footer>
+
+<!-- COUNTER SCRIPT -->
+<script>
+
+let count = 1024;
+
+function increaseCounter(){
+    count++;
+    document.getElementById("visitorCount").innerText = count;
+}
+
+</script>
+
+</body>
+
+</html>
